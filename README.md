@@ -10,4 +10,17 @@ This repository contains the source code under TensorFlow2.0 framework and model
 >           year = {2018}<br>
 >     }<br>
 
+```
+
+@Override
+
+protected void onDestroy() {
+
+    EventBus.getDefault().unregister(this);
+
+    super.onDestroy();
+
+}
+
+```
            
