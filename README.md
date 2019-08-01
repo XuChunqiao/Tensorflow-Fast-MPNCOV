@@ -11,4 +11,87 @@ This repository contains the source code under TensorFlow2.0 framework and model
            year = {2018}
      }
 ```
-           
+This paper concerns an iterative matrix square root normalization network (called fast MPN-COV), which is very efficient, fit for large-scale datasets, as opposed to its predecessor (i.e., MPN-COV published in ICCV17) that performs matrix power normalization by Eigen-decompositon. The code on bilinear CNN (B-CNN), compact bilinear pooling and global average pooling etc. is also released for both training from scratch and finetuning. If you use the code, please cite this fast MPN-COV work and its predecessor (i.e., MPN-COV).           
+## Classification results
+Classification results (single crop 224x224, %) on ImageNet 2012 validation set
+<table>
+<tr>                                      
+    <td rowspan="2"> Network</td>
+    <td rowspan="2"> Dim</td>
+    <td colspan="2">Top1_err</td>
+    <td colspan="2">Top5_err</td>
+    <td colspan="2">Pre-trained models</td>
+</tr>
+<tr>
+    <td>paper</td>
+    <td>reproduce</td>
+    <td>paper</td>
+    <td>reproduce</td>
+    <td>GoogleDrive</td>
+    <td>BaiduDrive</td>
+</tr>
+<tr>
+    <td>mpncov_resnet50</td>
+    <td rowspan="2"> 32K</td>
+    <td>22.14</td>
+    <td>TODO</td>
+    <td>6.22</td>
+    <td>TODO</td>
+    <td>GoogleDrive</td>
+    <td>BaiduDrive</td>
+</tr>
+<tr>
+    <td>mpncov_resnet101</td>
+    <td>21.21</td>
+    <td>TODO</td>
+    <td>5.68</td>
+    <td>TODO</td>
+    <td>GoogleDrive</td>
+    <td>BaiduDrive</td>
+</tr>
+</table>
+
+Fine-grained classification results (top-1 accuracy rates, %)
+<table>
+<tr>                                      
+    <td rowspan="2"> Backbone Model</td>
+    <td rowspan="2"> Dim</td>
+    <td colspan="2">CUB</td>
+    <td colspan="2">Aircraft</td>
+    <td colspan="2">Cars</td>
+</tr>
+<tr>
+    <td>paper</td>
+    <td>reproduce</td>
+    <td>paper</td>
+    <td>reproduce</td>
+    <td>paper</td>
+    <td>reproduce</td>
+</tr>
+<tr>
+    <td>resnet50</td>
+    <td rowspan="2"> 32K</td>
+    <td>88.1</td>
+    <td>TODO</td>
+    <td>90.0</td>
+    <td>TODO</td>
+    <td>92.8</td>
+    <td>TODO</td>
+</tr>
+<tr>
+    <td>resnet101</td>
+    <td>88.7</td>
+    <td>TODO</td>
+    <td>91.4</td>
+    <td>TODO</td>
+    <td>93.3</td>
+    <td>TODO</td>
+</tr>
+</table>
+
+* Our method uses neither bounding boxes nor part annotations<br>
+* The reproduced results are obtained by simply finetuning our pre-trained fast MPN-COV-ResNet model with a small learning rate, which do not perform SVM as our paper described.<br>
+#Implementation details
+We implement our Fast MPN-COV (i.e., iSQRT-COV) meta-layer under Tensorflow2.0 package. We release two versions of code:<br> 
+<table><table>the backpropagation of our meta-layer without using autograd package.<br>
+For making our Fast MPN-COV meta layer can be added in a network conveniently, we reconstruct pytorch official demo imagenet/ and models/. In which, we divide any network for three parts: 1) features extractor; 2) global image representation; 3) classifier. As such, we can arbitrarily combine a network with our Fast MPN-COV or some other global image representation methods (e.g.,Global average pooling, Bilinear pooling, Compact bilinear pooling, etc.) Based on these, we can:
