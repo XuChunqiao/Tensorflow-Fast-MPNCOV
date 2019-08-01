@@ -91,7 +91,10 @@ Fine-grained classification results (top-1 accuracy rates, %)
 
 * Our method uses neither bounding boxes nor part annotations<br>
 * The reproduced results are obtained by simply finetuning our pre-trained fast MPN-COV-ResNet model with a small learning rate, which do not perform SVM as our paper described.<br>
-#Implementation details
+## Implementation details
 We implement our Fast MPN-COV (i.e., iSQRT-COV) meta-layer under Tensorflow2.0 package. We release two versions of code:<br> 
-<table><table>the backpropagation of our meta-layer without using autograd package.<br>
+
+* The backpropagation of our meta-layer without using autograd package;<br>
+* The backpropagation of our meta-layer with using autograd package.<br>
+
 For making our Fast MPN-COV meta layer can be added in a network conveniently, we reconstruct pytorch official demo imagenet/ and models/. In which, we divide any network for three parts: 1) features extractor; 2) global image representation; 3) classifier. As such, we can arbitrarily combine a network with our Fast MPN-COV or some other global image representation methods (e.g.,Global average pooling, Bilinear pooling, Compact bilinear pooling, etc.) Based on these, we can:
