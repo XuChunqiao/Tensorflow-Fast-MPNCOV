@@ -16,36 +16,35 @@ This paper concerns an iterative matrix square root normalization network (calle
 Classification results (single crop 224x224, %) on ImageNet 2012 validation set
 <table>
 <tr>                                      
-    <td rowspan="2"> Network</td>
-    <td rowspan="2"> Dim</td>
-    <td colspan="2">Top1_err</td>
-    <td colspan="2">Top5_err</td>
-    <td colspan="2">Pre-trained models</td>
+    <td rowspan="3"> Network</td>
+    <td rowspan="3"> Dim</td>
+    <td colspan="3">Top1_err/Top5_err</td>
+    <td colspan="2" rowspan="2">Pre-trained models(tensorflow)</td>
 </tr>
 <tr>
-    <td>paper</td>
-    <td>reproduce</td>
-    <td>paper</td>
-    <td>reproduce</td>
+    <td rowspan="2">paper</td>
+    <td colspan="2">reproduce</td>
+</tr>
+<tr>
+    <td>tensorflow</td>
+    <td>pytorch</td>
     <td>GoogleDrive</td>
     <td>BaiduDrive</td>
 </tr>
 <tr>
     <td>mpncov_resnet50</td>
     <td rowspan="2"> 32K</td>
-    <td>22.14</td>
+    <td>22.14/6.22</td>
     <td>TODO</td>
-    <td>6.22</td>
     <td>TODO</td>
     <td>GoogleDrive</td>
     <td>BaiduDrive</td>
 </tr>
 <tr>
     <td>mpncov_resnet101</td>
-    <td>21.21</td>
-    <td>20.50</td>
-    <td>5.68</td>
-    <td>5.45</td>
+    <td>21.21/5.68</td>
+    <td>20.50/5.45</td>
+    <td>TODO</td>
     <td>GoogleDrive</td>
     <td>BaiduDrive</td>
 </tr>
@@ -54,8 +53,8 @@ Classification results (single crop 224x224, %) on ImageNet 2012 validation set
 Fine-grained classification results (top-1 accuracy rates, %)
 <table>
 <tr>                                      
-    <td rowspan="2"> Backbone Model</td>
-    <td rowspan="2"> Dim</td>
+    <td rowspan="2">Backbone Model</td>
+    <td rowspan="2">Dim</td>
     <td colspan="2">CUB</td>
     <td colspan="2">Aircraft</td>
     <td colspan="2">Cars</td>
