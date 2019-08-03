@@ -94,9 +94,14 @@ This paper concerns an iterative matrix square root normalization network (calle
 We implement our Fast MPN-COV (i.e., iSQRT-COV) meta-layer under ***Tensorflow2.0*** package. We release two versions of code:<br> 
 
 * The backpropagation of our meta-layer without using autograd package;<br>
-* The backpropagation of our meta-layer with using autograd package(TODO).<br>
+* The backpropagation of our meta-layer with using autograd package(**TODO**).<br>
 
-For making our Fast MPN-COV meta layer can be added in a network conveniently, we reconstruct pytorch official demo imagenet/ and models/. In which, we divide any network for three parts: 1) features extractor; 2) global image representation; 3) classifier. As such, we can arbitrarily combine a network with our Fast MPN-COV or some other global image representation methods (e.g.,Global average pooling, Bilinear pooling, Compact bilinear pooling, etc.) 
+For making our Fast MPN-COV meta layer can be added in a network conveniently, we reconstruct pytorch official demo imagenet/ and models/. In which, we divide any network for three parts: <br>
+* features extractor;<br>
+* global image representation;<br>
+* classifier. <br>
+
+As such, we can arbitrarily combine a network with our Fast MPN-COV or some other global image representation methods (e.g.,Global average pooling, Bilinear pooling, Compact bilinear pooling, etc.) 
 ## Installation and Usage
 
 ## Other Implementations
