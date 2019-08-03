@@ -43,9 +43,9 @@ Classification results (single crop 224x224, %) on ImageNet 2012 validation set
 <tr>
     <td>mpncov_resnet101</td>
     <td>21.21</td>
-    <td>TODO</td>
+    <td>20.50</td>
     <td>5.68</td>
-    <td>TODO</td>
+    <td>5.45</td>
     <td>GoogleDrive</td>
     <td>BaiduDrive</td>
 </tr>
@@ -83,9 +83,9 @@ Fine-grained classification results (top-1 accuracy rates, %)
     <td>88.7</td>
     <td>TODO</td>
     <td>91.4</td>
-    <td>TODO</td>
+    <td>91.8</td>
     <td>93.3</td>
-    <td>TODO</td>
+    <td>93.9</td>
 </tr>
 </table>
 
