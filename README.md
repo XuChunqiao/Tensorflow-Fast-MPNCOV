@@ -19,7 +19,7 @@ This paper concerns an iterative matrix square root normalization network (calle
     <td rowspan="3" align='center'>Network</strong></td>
     <td rowspan="3" align='center'>Dim</td>
     <td colspan="3" align='center'>Top1_err/Top5_err</td>
-    <td colspan="2" rowspan="2" align='center'>Pre-trained models(tensorflow)</td>
+    <td colspan="2" rowspan="2" align='center'>Pre-trained models<br>(tensorflow)</td>
 </tr>
 <tr>
     <td rowspan="2" align='center'>paper</td>
