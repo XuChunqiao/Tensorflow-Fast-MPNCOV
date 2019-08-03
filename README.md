@@ -55,7 +55,7 @@ This paper concerns an iterative matrix square root normalization network (calle
 <tr>                                      
     <td rowspan="2" align='center'>Backbone Model</td>
     <td rowspan="2" align='center'>Dim</td>
-    <td colspan="2" align='center'>CUB</td>
+    <td colspan="2" align='center'><a href="http://www.vision.caltech.edu/visipedia/CUB-200-2011.html" title="标题">CUB</a></td>
     <td colspan="2" align='center'>Aircraft</td>
     <td colspan="2" align='center'>Cars</td>
 </tr>
