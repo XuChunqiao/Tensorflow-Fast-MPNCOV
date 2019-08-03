@@ -1,7 +1,7 @@
 # Tensorflow Fast-MPNCOV
 ![](https://camo.githubusercontent.com/f2cdc5f25d743e922fd2c23e8a2a42e1f25c1e36/687474703a2f2f7065696875616c692e6f72672f70696374757265732f666173745f4d504e2d434f562e4a5047)
 ## Introduction
-This repository contains the source code under TensorFlow2.0 framework and models trained on ImageNet 2012 dataset for the following paper:<br>
+This repository contains the source code under ***TensorFlow2.0 framework*** and models trained on ImageNet 2012 dataset for the following paper:<br>
 ```
 @InProceedings{Li_2018_CVPR,
            author = {Li, Peihua and Xie, Jiangtao and Wang, Qilong and Gao, Zilin},
@@ -13,7 +13,7 @@ This repository contains the source code under TensorFlow2.0 framework and model
 ```
 This paper concerns an iterative matrix square root normalization network (called fast MPN-COV), which is very efficient, fit for large-scale datasets, as opposed to its predecessor (i.e., MPN-COV published in ICCV17) that performs matrix power normalization by Eigen-decompositon. The code on bilinear CNN (B-CNN), compact bilinear pooling and global average pooling etc. is also released for both training from scratch and finetuning. If you use the code, please cite this fast MPN-COV work and its predecessor (i.e., MPN-COV).           
 ## Classification results
-### Classification results (single crop 224x224, %) on ImageNet 2012 validation set
+#### Classification results (single crop 224x224, %) on ImageNet 2012 validation set
 <table>
 <tr>                                      
     <td rowspan="3"> Network</td>
@@ -50,7 +50,7 @@ This paper concerns an iterative matrix square root normalization network (calle
 </tr>
 </table>
 
-### Fine-grained classification results (top-1 accuracy rates, %)Tensorflow
+#### Fine-grained classification results (top-1 accuracy rates, %)
 <table>
 <tr>                                      
     <td rowspan="2">Backbone Model</td>
