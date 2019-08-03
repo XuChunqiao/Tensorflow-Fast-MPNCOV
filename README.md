@@ -26,7 +26,7 @@ This paper concerns an iterative matrix square root normalization network (calle
     <td colspan="2" align='center'>reproduce</td>
 </tr>
 <tr>
-    <td align='center'>tensorflow</td>
+    <td align='center'><strong>tensorflow</strong></td>
     <td align='center'>pytorch</td>
     <td align='center'>GoogleDrive</td>
     <td align='center'>BaiduDrive</td>
@@ -45,7 +45,7 @@ This paper concerns an iterative matrix square root normalization network (calle
     <td align='center'>21.21/5.68</td>
     <td align='center'><strong>20.50/5.45</strong></td>
     <td align='center'>20.99/5.56</td>
-    <td align='center'>GoogleDrive</td>
+    <td align='center'><a href="https://pan.baidu.com/s/1fj0-vukSbRz1ihTDtAbUdA" title="标题">GoogleDrive</a></td>
     <td align='center'><a href="https://pan.baidu.com/s/1fj0-vukSbRz1ihTDtAbUdA" title="标题">BaiduDrive</a></td>
 </tr>
 </table>
