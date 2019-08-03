@@ -13,7 +13,7 @@ This repository contains the source code under TensorFlow2.0 framework and model
 ```
 This paper concerns an iterative matrix square root normalization network (called fast MPN-COV), which is very efficient, fit for large-scale datasets, as opposed to its predecessor (i.e., MPN-COV published in ICCV17) that performs matrix power normalization by Eigen-decompositon. The code on bilinear CNN (B-CNN), compact bilinear pooling and global average pooling etc. is also released for both training from scratch and finetuning. If you use the code, please cite this fast MPN-COV work and its predecessor (i.e., MPN-COV).           
 ## Classification results
-Classification results (single crop 224x224, %) on ImageNet 2012 validation set
+### Classification results (single crop 224x224, %) on ImageNet 2012 validation set
 <table>
 <tr>                                      
     <td rowspan="3"> Network</td>
@@ -50,7 +50,7 @@ Classification results (single crop 224x224, %) on ImageNet 2012 validation set
 </tr>
 </table>
 
-Fine-grained classification results (top-1 accuracy rates, %)
+### Fine-grained classification results (top-1 accuracy rates, %)Tensorflow
 <table>
 <tr>                                      
     <td rowspan="2">Backbone Model</td>
@@ -91,7 +91,7 @@ Fine-grained classification results (top-1 accuracy rates, %)
 * Our method uses neither bounding boxes nor part annotations<br>
 * The reproduced results are obtained by simply finetuning our pre-trained fast MPN-COV-ResNet model with a small learning rate, which do not perform SVM as our paper described.<br>
 ## Implementation details
-We implement our Fast MPN-COV (i.e., iSQRT-COV) meta-layer under Tensorflow2.0 package. We release two versions of code:<br> 
+We implement our Fast MPN-COV (i.e., iSQRT-COV) meta-layer under ***Tensorflow2.0**** package. We release two versions of code:<br> 
 
 * The backpropagation of our meta-layer without using autograd package;<br>
 * The backpropagation of our meta-layer with using autograd package.<br>
