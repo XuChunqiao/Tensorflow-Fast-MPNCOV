@@ -16,75 +16,75 @@ This paper concerns an iterative matrix square root normalization network (calle
 #### Classification results (single crop 224x224, %) on ImageNet 2012 validation set
 <table>
 <tr>                                      
-    <td rowspan="3">Network</td>
-    <td rowspan="3">Dim</td>
-    <td colspan="3">Top1_err/Top5_err</td>
-    <td colspan="2" rowspan="2">Pre-trained models(tensorflow)</td>
+    <td rowspan="3" align='center'>Network</strong></td>
+    <td rowspan="3" align='center'>Dim</td>
+    <td colspan="3" align='center'>Top1_err/Top5_err</td>
+    <td colspan="2" rowspan="2" align='center'>Pre-trained models(tensorflow)</td>
 </tr>
 <tr>
-    <td rowspan="2">paper</td>
-    <td colspan="2">reproduce</td>
+    <td rowspan="2" align='center'>paper</td>
+    <td colspan="2" align='center'>reproduce</td>
 </tr>
 <tr>
-    <td>tensorflow</td>
-    <td>pytorch</td>
-    <td>GoogleDrive</td>
-    <td>BaiduDrive</td>
+    <td align='center'>tensorflow</td>
+    <td align='center'>pytorch</td>
+    <td align='center'>GoogleDrive</td>
+    <td align='center'>BaiduDrive</td>
 </tr>
 <tr>
     <td>mpncov_resnet50</td>
-    <td rowspan="2"> 32K</td>
-    <td>22.14/6.22</td>
-    <td><strong>TODO</strong></td>
-    <td>21.71/6.13</td>
-    <td>GoogleDrive</td>
-    <td>BaiduDrive</td>
+    <td rowspan="2" align='center'> 32K</td>
+    <td align='center'>22.14/6.22</td>
+    <td align='center'><strong>TODO</strong></td>
+    <td align='center'>21.71/6.13</td>
+    <td align='center'>GoogleDrive</td>
+    <td align='center'>BaiduDrive</td>
 </tr>
 <tr>
     <td>mpncov_resnet101</td>
-    <td>21.21/5.68</td>
-    <td><strong>20.50/5.45</strong></td>
-    <td>20.99/5.56</td>
-    <td>GoogleDrive</td>
-    <td>BaiduDrive</td>
+    <td align='center'>21.21/5.68</td>
+    <td align='center'><strong>20.50/5.45</strong></td>
+    <td align='center'>20.99/5.56</td>
+    <td align='center'>GoogleDrive</td>
+    <td align='center'>BaiduDrive</td>
 </tr>
 </table>
 
 #### Fine-grained classification results (top-1 accuracy rates, %)
 <table>
 <tr>                                      
-    <td rowspan="2">Backbone Model</td>
-    <td rowspan="2">Dim</td>
-    <td colspan="2">CUB</td>
-    <td colspan="2">Aircraft</td>
-    <td colspan="2">Cars</td>
+    <td rowspan="2" align='center'>Backbone Model</td>
+    <td rowspan="2" align='center'>Dim</td>
+    <td colspan="2" align='center'>CUB</td>
+    <td colspan="2" align='center'>Aircraft</td>
+    <td colspan="2" align='center'>Cars</td>
 </tr>
 <tr>
-    <td>paper</td>
-    <td>reproduce</td>
-    <td>paper</td>
-    <td>reproduce</td>
-    <td>paper</td>
-    <td>reproduce</td>
+    <td align='center'>paper</td>
+    <td align='center'>reproduce</td>
+    <td align='center'>paper</td>
+    <td align='center'>reproduce</td>
+    <td align='center'>paper</td>
+    <td align='center'>reproduce</td>
 </tr>
 <tr>
     <td>resnet50</td>
     <td rowspan="2"> 32K</td>
-    <td>88.1</td>
-    <td><strong>TODO</strong></td>
-    <td>90.0</td>
-    <td><strong>TODO</strong></td>
-    <td>92.8</td>
-    <td><strong>TODO</strong></td>
+    <td align='center'>88.1</td>
+    <td align='center'><strong>TODO</strong></td>
+    <td align='center'>90.0</td>
+    <td align='center'><strong>TODO</strong></td>
+    <td align='center'>92.8</td>
+    <td align='center'><strong>TODO</strong></td>
 </tr>
 <tr>
     <td>resnet101</td>
-    <td>88.7</td>
-    <td><strong>88.1</strong></td>
-    <td>91.4</td>
-    <td><strong>91.8</strong></td>
-    <td>93.3</td>
-    <td><strong>93.9</strong></td>
+    <td align='center'>88.7</td>
+    <td align='center'><strong>88.1</strong></td>
+    <td align='center'>91.4</td>
+    <td align='center'><strong>91.8</strong></td>
+    <td align='center'>93.3</td>
+    <td align='center'><strong>93.9</strong></td>
 </tr>
 </table>
 
