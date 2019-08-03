@@ -35,7 +35,7 @@ This paper concerns an iterative matrix square root normalization network (calle
     <td>mpncov_resnet50</td>
     <td rowspan="2"> 32K</td>
     <td>22.14/6.22</td>
-    <td>TODO</td>
+    <td><strong>TODO</strong></td>
     <td>21.71/6.13</td>
     <td>GoogleDrive</td>
     <td>BaiduDrive</td>
@@ -43,7 +43,7 @@ This paper concerns an iterative matrix square root normalization network (calle
 <tr>
     <td>mpncov_resnet101</td>
     <td>21.21/5.68</td>
-    <td>***20.50/5.45***</td>
+    <td><strong>20.50/5.45</strong></td>
     <td>20.99/5.56</td>
     <td>GoogleDrive</td>
     <td>BaiduDrive</td>
@@ -71,20 +71,20 @@ This paper concerns an iterative matrix square root normalization network (calle
     <td>resnet50</td>
     <td rowspan="2"> 32K</td>
     <td>88.1</td>
-    <td>TODO</td>
+    <td><strong>TODO</strong></td>
     <td>90.0</td>
-    <td>TODO</td>
+    <td><strong>TODO</strong></td>
     <td>92.8</td>
-    <td>TODO</td>
+    <td><strong>TODO</strong></td>
 </tr>
 <tr>
     <td>resnet101</td>
     <td>88.7</td>
-    <td>***88.1***</td>
+    <td><strong>88.1</strong></td>
     <td>91.4</td>
-    <td>***91.8***</td>
+    <td><strong>91.8</strong></td>
     <td>93.3</td>
-    <td>***93.9***</td>
+    <td><strong>93.9</strong></td>
 </tr>
 </table>
 
