@@ -101,9 +101,41 @@ For making our Fast MPN-COV meta layer can be added in a network conveniently, w
 * global image representation;<br>
 * classifier. <br>
 
-As such, we can arbitrarily combine a network with our Fast MPN-COV or some other global image representation methods (e.g.,Global average pooling, Bilinear pooling, Compact bilinear pooling, etc.) 
+As such, we can arbitrarily combine a network with our Fast MPN-COV or some other global image representation methods (e.g.,Global average pooling, Bilinear pooling(**TODO**), Compact bilinear pooling(**TODO**), etc.) 
 ## Installation and Usage
-
+1. Install Tensorflow (2.0.0b0)
+2. type ```git clone https://github.com/jiangtaoxie/fast-MPN-COV ```
+3. prepare the dataset as follows
+```
+.
+├── train
+│   ├── class1
+│   │   ├── class1_001.jpg
+│   │   ├── class1_002.jpg
+|   |   └── ...
+│   ├── class2
+│   ├── class3
+│   ├── ...
+│   ├── ...
+│   └── classN
+└── val
+    ├── class1
+    │   ├── class1_001.jpg
+    │   ├── class1_002.jpg
+    |   └── ...
+    ├── class2
+    ├── class3
+    ├── ...
+    ├── ...
+    └── classN
+```
+### train from scratch
+1. ``` cp ./trainingFromScratch/imagenet/imagenet_tfrecords.py ./ ```
+2. modify the dataset path and run ``` python imagenet_tfrecords.py ``` to create tfrecord files
+3. modify the parameters in train.sh ```sh train.sh```
+### finetune fast-MPNCOV models
+1. modify the parameters in finetune.sh
+2. ```sh finetune.sh```
 ## Other Implementations
 * [MatConvNet Implementation](https://github.com/jiangtaoxie/matconvnet.fast-mpn-cov)
 * [PyTorch Implementation](https://github.com/jiangtaoxie/fast-MPN-COV)
