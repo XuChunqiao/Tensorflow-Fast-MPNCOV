@@ -44,4 +44,32 @@ All the reproduced results use neither bounding boxes nor part annotations, and 
     <td>93.9</td>
 </tr>
 </table>
+## Bilinear CNN
+<table>
+<tr>                                      
+    <td rowspan="2"> Backbone Model</td>
+    <td rowspan="2"> Dim</td>
+    <td colspan="2">CUB</td>
+    <td colspan="2">Aircraft</td>
+    <td colspan="2">Cars</td>
+</tr>
+<tr>
+    <td>paper</td>
+    <td>reproduce</td>
+    <td>paper</td>
+    <td>reproduce</td>
+    <td>paper</td>
+    <td>reproduce</td>
+</tr>
+<tr>
+    <td>VGG16</td>
+    <td> 262K</td>
+    <td>88.1</td>
+    <td>TODO</td>
+    <td>90.0</td>
+    <td>TODO</td>
+    <td>92.8</td>
+    <td>TODO</td>
+</tr>
+</table>
 
