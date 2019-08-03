@@ -12,9 +12,9 @@ All the reproduced results use neither bounding boxes nor part annotations, and 
 <tr>                                      
     <td rowspan="2" align='center'>Backbone Model</td>
     <td rowspan="2" align='center'>Dim</td>
-    <td colspan="2" align='center'>CUB</td>
-    <td colspan="2" align='center'>Aircraft</td>
-    <td colspan="2" align='center'>Cars</td>
+    <td colspan="2" align='center'><a href="http://www.vision.caltech.edu/visipedia/CUB-200-2011.html" title="标题">CUB</a></td>
+    <td colspan="2" align='center'><a href="http://ai.stanford.edu/~jkrause/cars/car_dataset.html" title="标题">Aircraft</a></td>
+    <td colspan="2" align='center'><a href="http://www.robots.ox.ac.uk/~vgg/data/oid/" title="标题">Cars</a></td>
 </tr>
 <tr>
     <td align='center'>paper</td>
@@ -50,9 +50,9 @@ All the reproduced results use neither bounding boxes nor part annotations, and 
 <tr>                                      
     <td rowspan="2" align='center'>Backbone Model</td>
     <td rowspan="2" align='center'>Dim</td>
-    <td colspan="2" align='center'>CUB</td>
-    <td colspan="2" align='center'>Aircraft</td>
-    <td colspan="2" align='center'>Cars</td>
+    <td colspan="2" align='center'><a href="http://www.vision.caltech.edu/visipedia/CUB-200-2011.html" title="标题">CUB</a></td>
+    <td colspan="2" align='center'><a href="http://ai.stanford.edu/~jkrause/cars/car_dataset.html" title="标题">Aircraft</a></td>
+    <td colspan="2" align='center'><a href="http://www.robots.ox.ac.uk/~vgg/data/oid/" title="标题">Cars</a></td>
 </tr>
 <tr>
     <td align='center'>paper</td>
@@ -79,9 +79,9 @@ All the reproduced results use neither bounding boxes nor part annotations, and 
 <tr>                                      
     <td rowspan="2" align='center'>Backbone Model</td>
     <td rowspan="2" align='center'>Dim</td>
-    <td colspan="2" align='center'>CUB</td>
-    <td colspan="2" align='center'>Aircraft</td>
-    <td colspan="2" align='center'>Cars</td>
+    <td colspan="2" align='center'><a href="http://www.vision.caltech.edu/visipedia/CUB-200-2011.html" title="标题">CUB</a></td>
+    <td colspan="2" align='center'><a href="http://ai.stanford.edu/~jkrause/cars/car_dataset.html" title="标题">Aircraft</a></td>
+    <td colspan="2" align='center'><a href="http://www.robots.ox.ac.uk/~vgg/data/oid/" title="标题">Cars</a></td>
 </tr>
 <tr>
     <td align='center'>paper</td>
