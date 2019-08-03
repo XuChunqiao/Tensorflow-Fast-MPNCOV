@@ -1,13 +1,13 @@
-# Fine-tune pre-trained model in Tensorflow
+## Fine-tune pre-trained model in Tensorflow
 By using our code, we reproduce the results of three popular fine-grained benchmarks.(i.e., Bird, Aircrafts and Cars) We will keep updating the results of this page.
 
-## Our experiments are running on
+### Our experiments are running on
 * Tensorflow2.0.0b0<br>
 * 1 × 1080<br>
 * Cuda 10.0 with CuDNN 7.5<br>
-# Results (top-1 accuracy rates, %)
+## Results (top-1 accuracy rates, %)
 All the reproduced results use neither bounding boxes nor part annotations, and the SVM classifier is not performed.
-## MPNCOV
+### MPNCOV
 <table>
 <tr>                                      
     <td rowspan="2" align='center'>Backbone Model</td>
@@ -45,7 +45,7 @@ All the reproduced results use neither bounding boxes nor part annotations, and 
 </tr>
 </table>
 
-## Bilinear CNN
+### Bilinear CNN
 <table>
 <tr>                                      
     <td rowspan="2" align='center'>Backbone Model</td>
@@ -65,16 +65,16 @@ All the reproduced results use neither bounding boxes nor part annotations, and 
 <tr>
     <td>VGG16</td>
     <td rowspan="2"> 262</td>
-    <td align='center'>88.1</td>
+    <td align='center'>84.0</td>
     <td align='center'><strong>TODO</strong></td>
-    <td align='center'>90.0</td>
+    <td align='center'>86.9</td>
     <td align='center'><strong>TODO</strong></td>
-    <td align='center'>92.8</td>
+    <td align='center'>90.5</td>
     <td align='center'><strong>TODO</strong></td>
 </tr>
 </table>
 
-## Compact Bilinear CNN
+### Compact Bilinear CNN
 <table>
 <tr>                                      
     <td rowspan="2" align='center'>Backbone Model</td>
@@ -94,11 +94,11 @@ All the reproduced results use neither bounding boxes nor part annotations, and 
 <tr>
     <td>VGG16</td>
     <td rowspan="2"> 8k</td>
-    <td align='center'>88.1</td>
+    <td align='center'>84.0</td>
     <td align='center'><strong>TODO</strong></td>
-    <td align='center'>90.0</td>
+    <td align='center'>-</td>
     <td align='center'><strong>TODO</strong></td>
-    <td align='center'>92.8</td>
+    <td align='center'>-</td>
     <td align='center'><strong>TODO</strong></td>
 </tr>
 </table>
