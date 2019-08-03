@@ -15,15 +15,12 @@ This paper concerns an iterative matrix square root normalization network (calle
 ## Classification results
 #### Classification results (single crop 224x224, %) on ImageNet 2012 validation set
 <table>
-          <center>
 <tr>                                      
-    <td rowspan="3"> Network</td>
-    <td rowspan="3"> Dim</td>
-    <td colspan="3"><center>Top1_err/Top5_err</center></td>
+    <td rowspan="3">Network</td>
+    <td rowspan="3">Dim</td>
+    <td colspan="3">Top1_err/Top5_err</td>
     <td colspan="2" rowspan="2">Pre-trained models(tensorflow)</td>
 </tr>
-                     </cenetr>
-
 <tr>
     <td rowspan="2">paper</td>
     <td colspan="2">reproduce</td>
