@@ -325,9 +325,6 @@ def main():
                               'iterNum': 5,
                               'input_dim': 256,
                               'dimension_reduction': None}
-        elif args.representation == 'BCNN':
-            representation = {'function': BCNN,
-                              'input_dim': 512}
         else:
             warnings.warn('=> You did not choose a global image representation method!')
             representation = None  # which for original vgg or alexnet
