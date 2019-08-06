@@ -69,7 +69,7 @@ All the reproduced results use neither bounding boxes nor part annotations, and 
     <td align='center'><strong>TODO</strong></td>
     <td align='center'>86.9</td>
     <td align='center'><strong>TODO</strong></td>
-    <td align='center'>90.5</td>
+    <td align='center'>90.6</td>
     <td align='center'><strong>TODO</strong></td>
 </tr>
 </table>
