@@ -198,16 +198,6 @@ def resnet18(pretrained=False, **kwargs):
         pretrained (bool): If True, returns a model pre-trained on ImageNet
     """
     model = ResNet(residual_block, [2, 2, 2, 2], **kwargs)
-    # if pretrained:
-    #     model(tf.random.normal([1, 224, 224, 3]), training=False)
-    #     weights = sio.loadmat('mpncovresnet101.mat')['data'][0]
-    #     new_weights = []
-    #     for w in weights:
-    #         if len(w.shape) == 2:
-    #             new_weights.append(np.squeeze(w).astype(np.float16))
-    #         else:
-    #             new_weights.append(w.astype(np.float16))
-    #     model.set_weights(new_weights)
     return model
 
 def resnet26(pretrained=False, **kwargs):
@@ -217,16 +207,6 @@ def resnet26(pretrained=False, **kwargs):
         pretrained (bool): If True, returns a model pre-trained on ImageNet
     """
     model = ResNet(bottleneck_block, [2, 2, 2, 2], **kwargs)
-    # if pretrained:
-    #     model(tf.random.normal([1, 224, 224, 3]), training=False)
-    #     weights = sio.loadmat('resnet26.mat')['data'][0]
-    #     new_weights = []
-    #     for w in weights:
-    #         if len(w.shape) == 2:
-    #             new_weights.append(np.squeeze(w).astype(np.float16))
-    #         else:
-    #             new_weights.append(w.astype(np.float16))
-    #     model.set_weights(new_weights)
     return model
 
 
@@ -237,16 +217,6 @@ def resnet34(pretrained=False, **kwargs):
         pretrained (bool): If True, returns a model pre-trained on ImageNet
     """
     model = ResNet(residual_block, [3, 4, 6, 3], **kwargs)
-    # if pretrained:
-    #     model(tf.random.normal([1, 224, 224, 3]), training=False)
-    #     weights = sio.loadmat('mpncovresnet101.mat')['data'][0]
-    #     new_weights = []
-    #     for w in weights:
-    #         if len(w.shape) == 2:
-    #             new_weights.append(np.squeeze(w).astype(np.float16))
-    #         else:
-    #             new_weights.append(w.astype(np.float16))
-    #     model.set_weights(new_weights)
     return model
 
 
@@ -257,16 +227,6 @@ def resnet50(pretrained=False, **kwargs):
         pretrained (bool): If True, returns a model pre-trained on ImageNet
     """
     model = ResNet(bottleneck_block, [3, 4, 6, 3], **kwargs)
-    # if pretrained:
-    #     model(tf.random.normal([1, 224, 224, 3]), training=False)
-    #     weights = sio.loadmat('mpncovresnet101.mat')['data'][0]
-    #     new_weights = []
-    #     for w in weights:
-    #         if len(w.shape) == 2:
-    #             new_weights.append(np.squeeze(w).astype(np.float16))
-    #         else:
-    #             new_weights.append(w.astype(np.float16))
-    #     model.set_weights(new_weights)
     return model
 
 
@@ -277,16 +237,6 @@ def resnet101(pretrained=False, **kwargs):
         pretrained (bool): If True, returns a model pre-trained on ImageNet
     """
     model = ResNet(bottleneck_block, [3, 4, 23, 3], **kwargs)
-    # if pretrained:
-    #     model(tf.random.normal([1, 224, 224, 3]), training=False)
-    #     weights = sio.loadmat('mpncovresnet101.mat')['data'][0]
-    #     new_weights = []
-    #     for w in weights:
-    #         if len(w.shape) == 2:
-    #             new_weights.append(np.squeeze(w).astype(np.float16))
-    #         else:
-    #             new_weights.append(w.astype(np.float16))
-    #     model.set_weights(new_weights)
     return model
 
 
@@ -297,15 +247,6 @@ def resnet152(pretrained=False, **kwargs):
         pretrained (bool): If True, returns a model pre-trained on ImageNet
     """
     model = ResNet(bottleneck_block, [3, 8, 36, 3], **kwargs)
-    # if pretrained:
-    #     model(tf.random.normal([1, 224, 224, 3]), training=False)
-    #     weights = sio.loadmat('mpncovresnet101.mat')['data'][0]
-    #     new_weights = []
-    #     for w in weights:
-    #         if len(w.shape) == 2:
-    #             new_weights.append(np.squeeze(w).astype(np.float16))
-    #         else:
-    #             new_weights.append(w.astype(np.float16))
-    #     model.set_weights(new_weights)
+   
     return model
 
