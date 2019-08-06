@@ -56,7 +56,7 @@ learning_rate_multiplier=1\ 0.1\ 0.01\ 0.001
 weight_decay=1e-4
 classifier_factor=1
 #*********************************************
-echo "Start finetuning!"
+echo "Start training from scratch!"
 exp_dir=Results/FromScratch-$benchmark-$arch-$image_representation-$description-lr$lr-bs$batchsize
 if [ ! -d  "Results" ]; then
 
