@@ -18,11 +18,11 @@ All the reproduced results use neither bounding boxes nor part annotations, and 
 </tr>
 <tr>
     <td align='center'>paper</td>
-    <td align='center'>reproduce</td>
+    <td align='center'>reproduce<br>(tensorflow)</td>
     <td align='center'>paper</td>
-    <td align='center'>reproduce</td>
+    <td align='center'>reproduce<br>(tensorflow)</td>
     <td align='center'>paper</td>
-    <td align='center'>reproduce</td>
+    <td align='center'>reproduce<br>(tensorflow)</td>
 </tr>
 <tr>
     <td>resnet50</td>
@@ -45,6 +45,7 @@ All the reproduced results use neither bounding boxes nor part annotations, and 
 </tr>
 </table>
 
+
 ### Bilinear CNN
 <table>
 <tr>                                      
@@ -56,11 +57,11 @@ All the reproduced results use neither bounding boxes nor part annotations, and 
 </tr>
 <tr>
     <td align='center'>paper</td>
-    <td align='center'>reproduce</td>
+    <td align='center'>reproduce<br>(tensorflow)</td>
     <td align='center'>paper</td>
-    <td align='center'>reproduce</td>
+    <td align='center'>reproduce<br>(tensorflow)</td>
     <td align='center'>paper</td>
-    <td align='center'>reproduce</td>
+    <td align='center'>reproduce<br>(tensorflow)</td>
 </tr>
 <tr>
     <td>VGG16</td>
@@ -85,11 +86,11 @@ All the reproduced results use neither bounding boxes nor part annotations, and 
 </tr>
 <tr>
     <td align='center'>paper</td>
-    <td align='center'>reproduce</td>
+    <td align='center'>reproduce<br>(tensorflow)</td>
     <td align='center'>paper</td>
-    <td align='center'>reproduce</td>
+    <td align='center'>reproduce<br>(tensorflow)</td>
     <td align='center'>paper</td>
-    <td align='center'>reproduce</td>
+    <td align='center'>reproduce<br>(tensorflow)</td>
 </tr>
 <tr>
     <td>VGG16</td>
