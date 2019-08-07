@@ -61,11 +61,11 @@ This paper concerns an iterative matrix square root normalization network (calle
 </tr>
 <tr>
     <td align='center'>paper</td>
-    <td align='center'>reproduce</td>
+    <td align='center'>reproduce<br>(tensorflow)</td>
     <td align='center'>paper</td>
-    <td align='center'>reproduce</td>
+    <td align='center'>reproduce<br>(tensorflow)</td>
     <td align='center'>paper</td>
-    <td align='center'>reproduce</td>
+    <td align='center'>reproduce<br>(tensorflow)</td>
 </tr>
 <tr>
     <td>resnet50</td>
