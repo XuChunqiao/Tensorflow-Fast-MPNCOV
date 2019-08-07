@@ -7,6 +7,7 @@ By using our code, we reproduce the results of our Fast MPN-COV ResNet models on
  * Cuda 10.0 with CuDNN 7.5<br>
  
  ## Results
+#### Classification results (single crop 224x224, %) on ImageNet 2012 validation set
 <table>
 <tr>                                      
     <td rowspan="3" align='center'>Network</strong></td>
@@ -19,7 +20,7 @@ By using our code, we reproduce the results of our Fast MPN-COV ResNet models on
     <td colspan="2" align='center'>reproduce</td>
 </tr>
 <tr>
-    <td align='center'>tensorflow</td>
+    <td align='center'><strong>tensorflow</strong></td>
     <td align='center'>pytorch</td>
     <td align='center'>GoogleDrive</td>
     <td align='center'>BaiduDrive</td>
@@ -28,7 +29,7 @@ By using our code, we reproduce the results of our Fast MPN-COV ResNet models on
     <td>mpncov_resnet50</td>
     <td rowspan="2" align='center'> 32K</td>
     <td align='center'>22.14/6.22</td>
-    <td align='center'><strong>TODO</strong></td>
+    <td align='center'><strong>21.57/6.14</strong></td>
     <td align='center'>21.71/6.13</td>
     <td align='center'>GoogleDrive</td>
     <td align='center'>BaiduDrive</td>
@@ -38,7 +39,6 @@ By using our code, we reproduce the results of our Fast MPN-COV ResNet models on
     <td align='center'>21.21/5.68</td>
     <td align='center'><strong>20.50/5.45</strong></td>
     <td align='center'>20.99/5.56</td>
-    <td align='center'>GoogleDrive</td>
-    <td align='center'>BaiduDrive</td>
+    <td align='center'><a href="https://drive.google.com/file/d/1RFdw2oEZLe03SCDFanwQKHUY13OeEzp0/view" title="标题">GoogleDrive</a></td>
+    <td align='center'><a href="https://pan.baidu.com/s/1fj0-vukSbRz1ihTDtAbUdA" title="标题">BaiduDrive</a></td>
 </tr>
-</table>
