@@ -35,7 +35,7 @@ This paper concerns an iterative matrix square root normalization network (calle
     <td>mpncov_resnet50</td>
     <td rowspan="2" align='center'> 32K</td>
     <td align='center'>22.14/6.22</td>
-    <td align='center'><strong>TODO</strong></td>
+    <td align='center'><strong>21.57/6.14</strong></td>
     <td align='center'>21.71/6.13</td>
     <td align='center'>GoogleDrive</td>
     <td align='center'>BaiduDrive</td>
