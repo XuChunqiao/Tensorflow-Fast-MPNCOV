@@ -37,7 +37,7 @@ This paper concerns an iterative matrix square root normalization network (calle
     <td align='center'>22.14/6.22</td>
     <td align='center'><strong>21.57/6.14</strong></td>
     <td align='center'>21.71/6.13</td>
-    <td align='center'>GoogleDrive</td>
+    <td align='center'><a href="https://drive.google.com/file/d/1kXi3PGixfn7QZaxtLK2DkiZ6h-zoGpfq/view?usp=sharing" title="标题">GoogleDrive</a></td>
     <td align='center'>BaiduDrive</td>
 </tr>
 <tr>
