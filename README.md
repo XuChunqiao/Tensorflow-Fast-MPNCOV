@@ -91,12 +91,12 @@ This paper concerns an iterative matrix square root normalization network (calle
 * Our method uses neither bounding boxes nor part annotations<br>
 * The reproduced results are obtained by simply finetuning our pre-trained fast MPN-COV-ResNet model with a small learning rate, which do not perform SVM as our paper described.<br>
 ## Implementation details
-We implement our Fast MPN-COV (i.e., iSQRT-COV) meta-layer under ***Tensorflow2.0*** package. We release two versions of code:<br> 
+We implement our Fast MPN-COV (i.e., iSQRT-COV) [meta-layer](https://github.com/XuChunqiao/Tensorflow-Fast-MPNCOV/blob/master/src/representation/MPNCOV.py) under ***Tensorflow2.0*** package. We release two versions of code:<br> 
 
 * The backpropagation of our meta-layer without using autograd package;<br>
 * The backpropagation of our meta-layer with using autograd package(**TODO**).<br>
 
-For making our Fast MPN-COV meta layer can be added in a network conveniently, we reconstruct pytorch official demo imagenet/ and models/. In which, we divide any network for three parts: <br>
+For making our Fast MPN-COV meta layer can be added in a network conveniently, we divide any network for three parts: <br>
 * features extractor;<br>
 * global image representation;<br>
 * classifier. <br>
