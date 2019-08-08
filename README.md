@@ -11,7 +11,7 @@ This repository contains the source code under ***TensorFlow2.0 framework*** and
            year = {2018}
      }
 ```
-This paper concerns an iterative matrix square root normalization network (called fast MPN-COV), which is very efficient, fit for large-scale datasets, as opposed to its predecessor (i.e., [MPN-COV](https://github.com/jiangtaoxie/MPN-COV) published in ICCV17) that performs matrix power normalization by Eigen-decompositon. The code on bilinear CNN (B-CNN), compact bilinear pooling and global average pooling etc. is also released for both training from scratch and finetuning. If you use the code, please cite this [fast MPN-COV](http://peihuali.org/iSQRT-COV/iSQRT-COV_bib.htm) work and its predecessor (i.e., [MPN-COV](http://peihuali.org/iSQRT-COV/iSQRT-COV_bib.htm).           
+This paper concerns an iterative matrix square root normalization network (called fast MPN-COV), which is very efficient, fit for large-scale datasets, as opposed to its predecessor (i.e., [MPN-COV](https://github.com/jiangtaoxie/MPN-COV)) published in ICCV17) that performs matrix power normalization by Eigen-decompositon. The code on bilinear CNN (B-CNN), compact bilinear pooling and global average pooling etc. is also released for both training from scratch and finetuning. If you use the code, please cite this [fast MPN-COV](http://peihuali.org/iSQRT-COV/iSQRT-COV_bib.htm) work and its predecessor (i.e., [MPN-COV](http://peihuali.org/iSQRT-COV/iSQRT-COV_bib.htm)).           
 ## Classification results
 #### Classification results (single crop 224x224, %) on ImageNet 2012 validation set
 <table>
