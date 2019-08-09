@@ -38,7 +38,7 @@ This paper concerns an iterative matrix square root normalization network (calle
     <td align='center'><strong>21.57/6.14</strong></td>
     <td align='center'>21.71/6.13</td>
     <td align='center'><a href="https://drive.google.com/file/d/1kXi3PGixfn7QZaxtLK2DkiZ6h-zoGpfq/view?usp=sharing" title="标题">GoogleDrive</a></td>
-    <td align='center'>BaiduDrive</td>
+    <td align='center'><a href="https://pan.baidu.com/s/109VXo2XYyI2gvcHL9Xlv9g" title="标题">BaiduDrive</a></td>
 </tr>
 <tr>
     <td>mpncov_resnet101</td>
