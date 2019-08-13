@@ -28,11 +28,11 @@ All the reproduced results use neither bounding boxes nor part annotations, and 
     <td>resnet50</td>
     <td rowspan="2"> 32K</td>
     <td align='center'>88.1</td>
-    <td align='center'><strong>TODO</strong></td>
+    <td align='center'><strong>87.6</strong></td>
     <td align='center'>90.0</td>
-    <td align='center'><strong>TODO</strong></td>
+    <td align='center'><strong>90.5</strong></td>
     <td align='center'>92.8</td>
-    <td align='center'><strong>TODO</strong></td>
+    <td align='center'><strong>93.2</strong></td>
 </tr>
 <tr>
     <td>resnet101</td>
@@ -67,7 +67,7 @@ All the reproduced results use neither bounding boxes nor part annotations, and 
     <td>VGG16</td>
     <td rowspan="2"> 262</td>
     <td align='center'>84.0</td>
-    <td align='center'><strong>TODO</strong></td>
+    <td align='center'><strong>84.1</strong></td>
     <td align='center'>86.9</td>
     <td align='center'><strong>TODO</strong></td>
     <td align='center'>90.6</td>
@@ -96,7 +96,7 @@ All the reproduced results use neither bounding boxes nor part annotations, and 
     <td>VGG16</td>
     <td rowspan="2"> 8k</td>
     <td align='center'>84.0</td>
-    <td align='center'><strong>TODO</strong></td>
+    <td align='center'><strong>84.0</strong></td>
     <td align='center'>-</td>
     <td align='center'><strong>TODO</strong></td>
     <td align='center'>-</td>
