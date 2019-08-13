@@ -104,7 +104,7 @@ For making our Fast MPN-COV meta layer can be added in a network conveniently, w
 As such, we can arbitrarily combine a network with our Fast MPN-COV or some other global image representation methods (e.g.,Global average pooling, Bilinear pooling, Compact bilinear pooling, etc.) 
 ## Installation and Usage
 1. Install [Tensorflow (2.0.0b0)](https://tensorflow.google.cn/install)
-2. type ```git clone https://github.com/jiangtaoxie/fast-MPN-COV ```
+2. type ```git clone https://github.com/XuChunqiao/Tensorflow-Fast-MPNCOV ```
 3. prepare the dataset as follows
 ```
 .
