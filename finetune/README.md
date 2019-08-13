@@ -65,7 +65,7 @@ All the reproduced results use neither bounding boxes nor part annotations, and 
 </tr>
 <tr>
     <td>VGG16</td>
-    <td rowspan="2"> 262</td>
+    <td rowspan="2"> 262K</td>
     <td align='center'>84.0</td>
     <td align='center'><strong>84.1</strong></td>
     <td align='center'>86.9</td>
