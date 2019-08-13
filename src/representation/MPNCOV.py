@@ -61,7 +61,7 @@ class MPNCOV(tf.keras.Model):
         self.output_dim = int(output_dim * (output_dim + 1) / 2)
 
         if self.dropout_p is not None:
-            self.dropout = tf.keras.layers.Conv2D(self.dropout_p)
+            self.dropout = tf.keras.layers.Dropout(self.dropout_p)
 
     def call(self, x, training=None):
         if self.dr is not None:
