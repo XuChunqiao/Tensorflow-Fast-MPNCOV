@@ -71,11 +71,11 @@ This paper concerns an iterative matrix square root normalization network (calle
     <td>resnet50</td>
     <td rowspan="2"> 32K</td>
     <td align='center'>88.1</td>
-    <td align='center'><strong>TODO</strong></td>
+    <td align='center'><strong>87.6</strong></td>
     <td align='center'>90.0</td>
-    <td align='center'><strong>TODO</strong></td>
+    <td align='center'><strong>90.5</strong></td>
     <td align='center'>92.8</td>
-    <td align='center'><strong>TODO</strong></td>
+    <td align='center'><strong>93.2</strong></td>
 </tr>
 <tr>
     <td>resnet101</td>
@@ -101,7 +101,7 @@ For making our Fast MPN-COV meta layer can be added in a network conveniently, w
 * global image representation;<br>
 * classifier. <br>
 
-As such, we can arbitrarily combine a network with our Fast MPN-COV or some other global image representation methods (e.g.,Global average pooling, Bilinear pooling(**TODO**), Compact bilinear pooling(**TODO**), etc.) 
+As such, we can arbitrarily combine a network with our Fast MPN-COV or some other global image representation methods (e.g.,Global average pooling, Bilinear pooling, Compact bilinear pooling, etc.) 
 ## Installation and Usage
 1. Install [Tensorflow (2.0.0b0)](https://tensorflow.google.cn/install)
 2. type ```git clone https://github.com/jiangtaoxie/fast-MPN-COV ```
