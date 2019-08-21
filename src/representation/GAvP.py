@@ -10,6 +10,7 @@ class GAvP(tf.keras.Model):
          super(GAvP, self).__init__()
          self.avgpool = tf.keras.layers.GlobalAveragePooling2D()
          self.output_dim = input_dim
+         self.input_dim = input_dim
 
      def call(self, x, training=None):
          x = self.avgpool(x)
