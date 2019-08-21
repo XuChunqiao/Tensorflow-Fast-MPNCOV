@@ -37,6 +37,7 @@ class MPNCOV(tf.keras.Model):
         self.iterNum = iterNum
         self.dr = dimension_reduction
         self.dropout_p = dropout_p
+        self.input_dim = input_dim
 
         if self.dr is not None:
             if tf.keras.backend.image_data_format() == 'channels_last':
