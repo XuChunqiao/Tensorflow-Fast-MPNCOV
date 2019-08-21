@@ -12,11 +12,11 @@ import scipy.io as sio
 from utils import AverageMeter, plot_curve, Logger
 
 from trainingFromScratch.imagenet.imagenet_dataset import *
+from trainingFromScratch.cifar100.cifar_dataset import *
 from src.network import *
 from src.representation import *
 from model_init import *
 from finetune.fine_grained_benchmark.datasets import *
-from trainingFromScratch.imagenet.imagenet_dataset import *
 
 
 
@@ -323,6 +323,8 @@ def main():
         dataset = Cars_dataset
     elif 'imagenet' in args.benchmark:
         dataset = ImageNetInput
+    elif 'cifar100' in args.benchmark:
+        dataset = CifarDataSet
     else:
         raise (RuntimeError('benchmark is not in {CUB, Cars, Aircrafts, imagenet}'))
 
