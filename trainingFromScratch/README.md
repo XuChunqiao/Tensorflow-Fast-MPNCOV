@@ -7,7 +7,7 @@ By using our code, we reproduce the results of our Fast MPN-COV ResNet models on
  * Cuda 10.0 with CuDNN 7.5<br>
  
  ## Results
-#### Classification results (single crop 224x224, %) on ImageNet 2012 validation set
+#### Classification results (single crop 224x224, %) on **ImageNet 2012** validation set
 <table>
 <tr>                                      
     <td rowspan="3" align='center'>Network</strong></td>
@@ -41,4 +41,22 @@ By using our code, we reproduce the results of our Fast MPN-COV ResNet models on
     <td align='center'>20.99/5.56</td>
     <td align='center'><a href="https://drive.google.com/file/d/1RFdw2oEZLe03SCDFanwQKHUY13OeEzp0/view" title="标题">GoogleDrive</a></td>
     <td align='center'><a href="https://pan.baidu.com/s/1fj0-vukSbRz1ihTDtAbUdA" title="标题">BaiduDrive</a></td>
+</tr>
+
+#### Classification results (single crop 32x32, %) on **CTFAR100** validation set
+<table>
+<tr>                                      
+    <td align='center'>Network</strong></td>
+    <td align='center'>Dim</td>
+    <td align='center'>Top1_err</td>
+</tr>
+<tr>
+    <td>PreAct_Resnet164</td>
+    <td align='center'>256</td>
+    <td align='center'>24.33</td>
+</tr>
+<tr>
+    <td>MPNCOV_PreAct_Resnet164</td>
+    <td rowspan="2" align='center'> 8256<br>(dropout:0.5)</td>
+    <td align='center'>19.91</td>
 </tr>
