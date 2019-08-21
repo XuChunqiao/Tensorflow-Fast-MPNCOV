@@ -5,6 +5,7 @@ import warnings
 from .mpncov_resnet import *
 from .resnet import *
 from .vgg import *
+from .mpncov_cifar_model import *
 
 
 def get_basemodel(modeltype, pretrained=False):
@@ -48,7 +49,7 @@ class Basemodel(tf.keras.Model):
         model.features = tf.keras.Sequential(layers=basemodel.layers[:-2], name='features')
         model.representation = basemodel.MPNCOV
         model.classifier = basemodel.fc
-        model.representation_dim = 256
+        model.representation_dim = model.representation.input_dim
         return model
 
     def _reconstruct_vgg(self, basemodel):
@@ -58,6 +59,14 @@ class Basemodel(tf.keras.Model):
         model.classifier = basemodel.classifier
         model.representation_dim = 512
         return model
+    def _reconstruct_cifar_model(self, basemodel):
+        model = tf.keras.Model()
+        model.features = tf.keras.Sequential(layers=basemodel.layers[:-2], name='features')
+        model.representation = basemodel.layers[-2]
+        model.classifier = basemodel.fc
+        model.representation_dim = model.representation.input_dim
+        return model
+
 
     def call(self, x, training=None):
         x = self.features(x, training=training)
