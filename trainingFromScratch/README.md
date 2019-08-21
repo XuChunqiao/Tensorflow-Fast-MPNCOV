@@ -1,5 +1,5 @@
 ## Train from scratch
-By using our code, we reproduce the results of our Fast MPN-COV ResNet models on ImageNet 2012. At the same time, in order to facilitate the performance evaluation, we also provide the results of our Fast MPN-COV ResNet models on CIFAR100.
+By using our code, we reproduce the results of our Fast MPN-COV ResNet models on ImageNet 2012. At the same time, in order to facilitate the performance evaluation, we also provide the results on CIFAR100.
 
 ### Our experiments are running on
  * Tensorflow 2.0.0b0<br>
