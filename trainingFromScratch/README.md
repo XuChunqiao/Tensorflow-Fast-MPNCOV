@@ -42,6 +42,7 @@ By using our code, we reproduce the results of our Fast MPN-COV ResNet models on
     <td align='center'><a href="https://drive.google.com/file/d/1RFdw2oEZLe03SCDFanwQKHUY13OeEzp0/view" title="标题">GoogleDrive</a></td>
     <td align='center'><a href="https://pan.baidu.com/s/1fj0-vukSbRz1ihTDtAbUdA" title="标题">BaiduDrive</a></td>
 </tr>
+</table>
 
 #### Classification results (single crop 32x32, %) on **CTFAR100** validation set
 <table>
@@ -60,3 +61,4 @@ By using our code, we reproduce the results of our Fast MPN-COV ResNet models on
     <td rowspan="2" align='center'> 8256<br>(dropout:0.5)</td>
     <td align='center'>19.91</td>
 </tr>
+</table>
