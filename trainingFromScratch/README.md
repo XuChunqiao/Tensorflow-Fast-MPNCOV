@@ -6,7 +6,7 @@ By using our code, we reproduce the results of our Fast MPN-COV ResNet models on
  * 2 x 1080Ti<br>
  * Cuda 10.0 with CuDNN 7.5<br>
  
- ## Results
+## Results
 #### Classification results (single crop 224x224, %) on **ImageNet 2012** validation set
 <table>
 <tr>                                      
@@ -21,7 +21,7 @@ By using our code, we reproduce the results of our Fast MPN-COV ResNet models on
 </tr>
 <tr>
     <td align='center'><strong>tensorflow</strong></td>
-    <td align='center'>pytorch</td>
+    <td align='center'><a href="https://github.com/jiangtaoxie/fast-MPN-COV" title="标题">pytorch</a></td>
     <td align='center'>GoogleDrive</td>
     <td align='center'>BaiduDrive</td>
 </tr>
@@ -31,8 +31,8 @@ By using our code, we reproduce the results of our Fast MPN-COV ResNet models on
     <td align='center'>22.14/6.22</td>
     <td align='center'><strong>21.57/6.14</strong></td>
     <td align='center'>21.71/6.13</td>
-    <td align='center'>GoogleDrive</td>
-    <td align='center'>BaiduDrive</td>
+    <td align='center'><a href="https://drive.google.com/file/d/1kXi3PGixfn7QZaxtLK2DkiZ6h-zoGpfq/view?usp=sharing" title="标题">GoogleDrive</a></td>
+    <td align='center'><a href="https://pan.baidu.com/s/109VXo2XYyI2gvcHL9Xlv9g" title="标题">BaiduDrive</a></td>
 </tr>
 <tr>
     <td>mpncov_resnet101</td>
