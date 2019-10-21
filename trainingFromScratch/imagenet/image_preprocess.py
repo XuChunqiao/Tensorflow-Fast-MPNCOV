@@ -257,8 +257,8 @@ def preprocess_for_train(image_bytes, use_bfloat16, image_size=IMAGE_SIZE):
   image = tf.reshape(image, [image_size, image_size, 3])
   image = tf.image.convert_image_dtype(
       image, dtype=tf.bfloat16 if use_bfloat16 else tf.float32)
-  image = _ColorJitter(image)
-  image = _Add_PCA_noise(image)
+#   image = _ColorJitter(image)
+#   image = _Add_PCA_noise(image)
   image = tf.subtract(image, [0.485 * 255, 0.456 * 255, 0.406 * 255])
   image = tf.divide(image, [0.229 * 255, 0.224 * 255, 0.225 * 255])
   return image
