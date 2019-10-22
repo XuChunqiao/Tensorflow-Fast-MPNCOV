@@ -108,8 +108,7 @@ def _decode_and_random_crop(image_bytes, image_size):
       bad,
       lambda: _decode_and_center_crop(image_bytes, image_size),
       lambda: tf.image.resize(image,    # pylint: disable=g-long-lambda
-                              [image_size, image_size],
-                              method='bicubic'))
+                              [image_size, image_size]))
 
 
   return image
@@ -131,7 +130,7 @@ def _decode_and_center_crop(image_bytes, image_size):
   crop_window = tf.stack([offset_height, offset_width,
                           padded_center_crop_size, padded_center_crop_size])
   image = tf.image.decode_and_crop_jpeg(image_bytes, crop_window, channels=3)
-  image = tf.image.resize(image, [image_size, image_size], method='bicubic')
+  image = tf.image.resize(image, [image_size, image_size])
 
   return image
 
