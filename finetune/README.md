@@ -54,8 +54,8 @@ All the reproduced results use neither bounding boxes nor part annotations, and 
 </tr>
 </table>
 
-# parameter setting 
-* mpncov_VGG16BN: weightdecay=1e-4, batchsize=10, learningrate=3e-3 for all layers except the FC layer(which is **5×learningrate**, and at the learning rate is reduced to 3e-4 at epoch 20(*FC: 5×3e-4*)
+* **parameter setting**<br>
+**mpncov_VGG16BN**: weightdecay=1e-4, batchsize=10, learningrate=3e-3 for all layers except the FC layer(which is *5×learningrate*, and at the learning rate is reduced to 3e-4 at epoch 20(*FC: 5×3e-4*)
 
 ### Bilinear CNN
 <table>
