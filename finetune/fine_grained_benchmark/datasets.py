@@ -10,7 +10,7 @@ import scipy.io as sio
 AUTOTUNE = tf.data.experimental.AUTOTUNE
 
 class CUB_dataset(object):
-    def __init__(self, is_training=True, data_dir=None):
+    def __init__(self, is_training=True, data_dir=None, pretrained=False, arch=None,):
         """Create  TFRecord files from Raw Images and Create an input from TFRecord files.
         Args:
           is_training: `bool` for whether the input is for training
@@ -23,6 +23,8 @@ class CUB_dataset(object):
         IMAGESIZE = 448
         self.is_training = is_training
         self.data_dir = data_dir
+        self.pretrained = pretrained
+        self.arch = arch
 
         def preprocess_train_image_randomflip(image_bytes):
             shape = tf.image.extract_jpeg_shape(image_bytes)
@@ -38,8 +40,19 @@ class CUB_dataset(object):
             image = tf.image.decode_and_crop_jpeg(image_bytes, crop_window, channels=3)
             image = tf.image.resize(image, [IMAGESIZE, IMAGESIZE])
             image = tf.image.random_flip_left_right(image)
-            image = tf.subtract(image, [0.485 * 255, 0.456 * 255, 0.406 * 255])
-            image = tf.divide(image, [0.229 * 255, 0.224 * 255, 0.225 * 255])
+            if self.pretrained and self.arch.startswith('vgg'):
+                # RGB==>BGR for VGG16
+                image = image[..., ::-1]
+                mean = [0.406 * 255, 0.456 * 255, 0.485 * 255]
+                std = None
+            else:
+                mean = [0.485 * 255, 0.456 * 255, 0.406 * 255]
+                std = [0.229 * 255, 0.224 * 255, 0.225 * 255]
+            if mean is not None:
+                image = tf.subtract(image, mean)
+            if std is not None:
+                image = tf.divide(image, std)
+
             return image
 
         def preprocess_val_image_flip(image_bytes):
@@ -55,10 +68,21 @@ class CUB_dataset(object):
                                     padded_center_crop_size, padded_center_crop_size])
             image = tf.image.decode_and_crop_jpeg(image_bytes, crop_window, channels=3)
             image = tf.image.resize(image, [IMAGESIZE, IMAGESIZE])
+            if self.pretrained and self.arch.startswith('vgg'):
+                # RGB==>BGR for VGG16
+                image = image[..., ::-1]
+                mean = [0.406 * 255, 0.456 * 255, 0.485 * 255]
+                std = None
+            else:
+                mean = [0.485 * 255, 0.456 * 255, 0.406 * 255]
+                std = [0.229 * 255, 0.224 * 255, 0.225 * 255]
+
             image_flip = tf.image.flip_left_right(image)
             image = tf.stack([image, image_flip])
-            image = tf.subtract(image, [0.485 * 255, 0.456 * 255, 0.406 * 255])
-            image = tf.divide(image, [0.229 * 255, 0.224 * 255, 0.225 * 255])
+            if mean is not None:
+                image = tf.subtract(image, mean)
+            if std is not None:
+                image = tf.divide(image, std)
             return image
 
         if self.is_training:
@@ -109,7 +133,7 @@ class CUB_dataset(object):
 
 
 class Aircrafts_dataset(object):
-    def __init__(self, is_training=True, data_dir=None):
+    def __init__(self, is_training=True, data_dir=None, pretrained=False, arch=None):
         """Create  TFRecord files from Raw Images and Create an input from TFRecord files.
         Args:
           is_training: `bool` for whether the input is for training
@@ -122,24 +146,47 @@ class Aircrafts_dataset(object):
         IMAGESIZE = 512
         self.is_training = is_training
         self.data_dir = data_dir
+        self.pretrained = pretrained
+        self.arch = arch
 
         def preprocess_train_image_randomflip(image_bytes):
             image = tf.image.decode_jpeg(image_bytes, channels=3)
             image = tf.image.resize(image, [IMAGESIZE, IMAGESIZE])
             image = tf.image.central_crop(image, 448.0 / IMAGESIZE)
             image = tf.image.random_flip_left_right(image)
-            image = tf.subtract(image, [0.485 * 255, 0.456 * 255, 0.406 * 255])
-            image = tf.divide(image, [0.229 * 255, 0.224 * 255, 0.225 * 255])
+            if self.pretrained and self.arch.startswith('vgg'):
+                # RGB==>BGR for VGG16
+                image = image[..., ::-1]
+                mean = [0.406 * 255, 0.456 * 255, 0.485 * 255]
+                std = None
+            else:
+                mean = [0.485 * 255, 0.456 * 255, 0.406 * 255]
+                std = [0.229 * 255, 0.224 * 255, 0.225 * 255]
+            if mean is not None:
+                image = tf.subtract(image, mean)
+            if std is not None:
+                image = tf.divide(image, std)
             return image
 
         def preprocess_val_image_flip(image_bytes):
             image = tf.image.decode_jpeg(image_bytes, channels=3)
             image = tf.image.resize(image, [IMAGESIZE, IMAGESIZE])
             image = tf.image.central_crop(image, 448.0 / IMAGESIZE)
+            if self.pretrained and self.arch.startswith('vgg'):
+                # RGB==>BGR for VGG16
+                image = image[..., ::-1]
+                mean = [0.406 * 255, 0.456 * 255, 0.485 * 255]
+                std = None
+            else:
+                mean = [0.485 * 255, 0.456 * 255, 0.406 * 255]
+                std = [0.229 * 255, 0.224 * 255, 0.225 * 255]
+
             image_flip = tf.image.flip_left_right(image)
             image = tf.stack([image, image_flip])
-            image = tf.subtract(image, [0.485 * 255, 0.456 * 255, 0.406 * 255])
-            image = tf.divide(image, [0.229 * 255, 0.224 * 255, 0.225 * 255])
+            if mean is not None:
+                image = tf.subtract(image, mean)
+            if std is not None:
+                image = tf.divide(image, std)
             return image
 
         if self.is_training:
@@ -187,7 +234,7 @@ class Aircrafts_dataset(object):
         return self.ds.batch(batchsize).prefetch(buffer_size=AUTOTUNE)
 
 class Cars_dataset(object):
-    def __init__(self, is_training=True, data_dir=None):
+    def __init__(self, is_training=True, data_dir=None, pretrained=False, arch=None):
         """Create  TFRecord files from Raw Images and Create an input from TFRecord files.
         Args:
           is_training: `bool` for whether the input is for training
@@ -200,22 +247,45 @@ class Cars_dataset(object):
         IMAGESIZE = 448
         self.is_training = is_training
         self.data_dir = data_dir
+        self.pretrained = pretrained
+        self.arch = arch
 
         def preprocess_train_image_randomflip(image_bytes):
             image = tf.image.decode_jpeg(image_bytes, channels=3)
             image = tf.image.resize(image, [IMAGESIZE, IMAGESIZE])
             image = tf.image.random_flip_left_right(image)
-            image = tf.subtract(image, [0.485 * 255, 0.456 * 255, 0.406 * 255])
-            image = tf.divide(image, [0.229 * 255, 0.224 * 255, 0.225 * 255])
+            if self.pretrained and self.arch.startswith('vgg'):
+                # RGB==>BGR for VGG16
+                image = image[..., ::-1]
+                mean = [0.406 * 255, 0.456 * 255, 0.485 * 255]
+                std = None
+            else:
+                mean = [0.485 * 255, 0.456 * 255, 0.406 * 255]
+                std = [0.229 * 255, 0.224 * 255, 0.225 * 255]
+            if mean is not None:
+                image = tf.subtract(image, mean)
+            if std is not None:
+                image = tf.divide(image, std)
             return image
 
         def preprocess_val_image_flip(image_bytes):
             image = tf.image.decode_jpeg(image_bytes, channels=3)
             image = tf.image.resize(image, [IMAGESIZE, IMAGESIZE])
+            if self.pretrained and self.arch.startswith('vgg'):
+                # RGB==>BGR for VGG16
+                image = image[..., ::-1]
+                mean = [0.406 * 255, 0.456 * 255, 0.485 * 255]
+                std = None
+            else:
+                mean = [0.485 * 255, 0.456 * 255, 0.406 * 255]
+                std = [0.229 * 255, 0.224 * 255, 0.225 * 255]
+
             image_flip = tf.image.flip_left_right(image)
             image = tf.stack([image, image_flip])
-            image = tf.subtract(image, [0.485 * 255, 0.456 * 255, 0.406 * 255])
-            image = tf.divide(image, [0.229 * 255, 0.224 * 255, 0.225 * 255])
+            if mean is not None:
+                image = tf.subtract(image, mean)
+            if std is not None:
+                image = tf.divide(image, std)
             return image
 
         if self.is_training:
