@@ -6,7 +6,7 @@ from .mpncov_resnet import *
 from .resnet import *
 from .vgg import *
 from .mpncov_cifar_model import *
-
+from .mpncov_vgg16bn import *
 
 def get_basemodel(modeltype, pretrained=False):
     modeltype = globals()[modeltype]
@@ -30,6 +30,12 @@ class Basemodel(tf.keras.Model):
             basemodel = self._reconstruct_mpncovresnet(basemodel)
         elif modeltype.startswith('vgg'):
             basemodel = self._reconstruct_vgg(basemodel)
+        elif modeltype.startswith('cifar_'):
+            basemodel = self._reconstruct_cifar_model(basemodel)
+        elif modeltype.startswith('mpncov_vgg'):
+            basemodel = self._reconstruct_mpncov_vgg(basemodel)
+        else:
+            raise RuntimeError('There is no matching model!')
 
         self.features = basemodel.features
         self.representation = basemodel.representation
@@ -59,6 +65,15 @@ class Basemodel(tf.keras.Model):
         model.classifier = basemodel.classifier
         model.representation_dim = 512
         return model
+
+    def _reconstruct_mpncov_vgg(self, basemodel):
+        model = tf.keras.Model()
+        model.features = basemodel.features
+        model.representation = basemodel.representation
+        model.classifier = basemodel.classifier
+        model.representation_dim = 512
+        return model
+
     def _reconstruct_cifar_model(self, basemodel):
         model = tf.keras.Model()
         model.features = tf.keras.Sequential(layers=basemodel.layers[:-2], name='features')
@@ -67,8 +82,8 @@ class Basemodel(tf.keras.Model):
         model.representation_dim = model.representation.input_dim
         return model
 
-
     def call(self, x, training=None):
+
         x = self.features(x, training=training)
         x = self.representation(x, training=training)
         out = self.classifier(x)
