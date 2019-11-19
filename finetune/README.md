@@ -10,7 +10,7 @@ All the reproduced results use neither bounding boxes nor part annotations, and 
 ### MPNCOV
 <table>
 <tr>                                      
-    <td rowspan="2" align='center'>Backbone Model</td>
+    <td rowspan="2" align='center'>Model</td>
     <td rowspan="2" align='center'>Dim</td>
     <td colspan="2" align='center'><a href="http://www.vision.caltech.edu/visipedia/CUB-200-2011.html" title="标题">CUB</a></td>
     <td colspan="2" align='center'><a href="http://ai.stanford.edu/~jkrause/cars/car_dataset.html" title="标题">Aircraft</a></td>
@@ -25,8 +25,8 @@ All the reproduced results use neither bounding boxes nor part annotations, and 
     <td align='center'>reproduce<br>(tensorflow)</td>
 </tr>
 <tr>
-    <td>resnet50</td>
-    <td rowspan="2"> 32K</td>
+    <td>mpncov_resnet50</td>
+    <td rowspan="3"> 32K</td>
     <td align='center'>88.1</td>
     <td align='center'><strong>87.6</strong></td>
     <td align='center'>90.0</td>
@@ -35,13 +35,22 @@ All the reproduced results use neither bounding boxes nor part annotations, and 
     <td align='center'><strong>93.2</strong></td>
 </tr>
 <tr>
-    <td>resnet101</td>
+    <td>mpncov_resnet101</td>
     <td align='center'>88.7</td>
     <td align='center'><strong>88.1</strong></td>
     <td align='center'>91.4</td>
     <td align='center'><strong>91.8</strong></td>
     <td align='center'>93.3</td>
     <td align='center'><strong>93.9</strong></td>
+</tr>
+<tr>
+    <td>mpncov_VGG16BN</td>
+    <td align='center'></td>
+    <td align='center'><strong></strong></td>
+    <td align='center'></td>
+    <td align='center'><strong></strong></td>
+    <td align='center'></td>
+    <td align='center'><strong></strong></td>
 </tr>
 </table>
 
