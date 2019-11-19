@@ -51,12 +51,14 @@ This paper concerns an iterative matrix square root normalization network (calle
 <tr>
     <td>mpncov_VGG16BN</td>
     <td align='center'>——</td>
-    <td align='center'><strong>TODO</strong></td>
-    <td align='center'>——</td>
+    <td align='center'><strong>23.98/7.12</strong></td>
+    <td align='center'>23.98/7.12</td>
     <td align='center'><a href="https://drive.google.com/open?id=19c8ei0FdeRMfeITBApvrjsV49lp1-2ss" title="标题">GoogleDrive</a></td>
-    <td align='center'><a href="https://pan.baidu.com/s/1pmwkxkd9fS8j52sCmuHEpg" title="标题">BaiduDrive</a></td>
+    <td align='center'><a href="https://pan.baidu.com/s/13u1nih7bC1b4Mgn9APYxBA" title="标题">BaiduDrive</a></td>
 </tr>
 </table>
+
+* We convert the trained mpncov_VGG16BN model from the PyTorch framework to TensorFlow framework
 
 #### Fine-grained classification results (top-1 accuracy rates, %)
 <table>
