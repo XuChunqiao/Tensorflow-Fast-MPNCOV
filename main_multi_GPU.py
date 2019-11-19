@@ -35,7 +35,7 @@ parser.add_argument('--val-num', default=None, type=int,
 
 parser.add_argument('--arch', '-a', metavar='ARCH', default='mpncovresnet50',
                     help='model architecture: ')
-parser.add_argument('--representation', default='MPNCOV', type=str,
+parser.add_argument('--representation', default=None, type=str,
                     help='define the representation method:{GAvP, MPNCOV, BCNN, CBP}')
 parser.add_argument('--freezed-layer', default=None, type=int,
                     help='freeze layer')
