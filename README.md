@@ -96,17 +96,21 @@ This paper concerns an iterative matrix square root normalization network (calle
 </tr>
 <tr>
     <td>mpncov_VGG16BN</td>
-    <td align='center'></td>
-    <td align='center'><strong></strong></td>
-    <td align='center'></td>
-    <td align='center'><strong></strong></td>
-    <td align='center'></td>
-    <td align='center'><strong></strong></td>
+    <td align='center'>87.2</td>
+    <td align='center'><strong>86.95</strong></td>
+    <td align='center'>90.0</td>
+    <td align='center'><strong>91.72</strong></td>
+    <td align='center'>92.5</td>
+    <td align='center'><strong>92.95</strong></td>
 </tr>
 </table>
 
 * Our method uses neither bounding boxes nor part annotations<br>
 * The reproduced results are obtained by simply finetuning our pre-trained fast MPN-COV-ResNet model with a small learning rate, which do not perform SVM as our paper described.<br>
+```
+parameter setting
+mpncov_VGG16BN: weightdecay=1e-4, batchsize=10, learningrate=3e-3 for all layers except the FC layer(which is 5×learningrate, and the learning rate is reduced to 3e-4 at epoch 20(FC: 5×3e-4)
+```
 ## Implementation details
 We implement our Fast MPN-COV (i.e., iSQRT-COV) [meta-layer](https://github.com/XuChunqiao/Tensorflow-Fast-MPNCOV/blob/master/src/representation/MPNCOV.py) under ***Tensorflow2.0*** package. We release two versions of code:<br> 
 
