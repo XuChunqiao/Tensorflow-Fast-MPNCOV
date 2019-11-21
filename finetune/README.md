@@ -10,7 +10,7 @@ All the reproduced results use neither bounding boxes nor part annotations, and 
 ### MPNCOV
 <table>
 <tr>                                      
-    <td rowspan="2" align='center'>Model</td>
+    <td rowspan="2" align='center'>Network</td>
     <td rowspan="2" align='center'>Dim</td>
     <td colspan="2" align='center'><a href="http://www.vision.caltech.edu/visipedia/CUB-200-2011.html" title="标题">CUB</a></td>
     <td colspan="2" align='center'><a href="http://ai.stanford.edu/~jkrause/cars/car_dataset.html" title="标题">Aircraft</a></td>
@@ -25,8 +25,17 @@ All the reproduced results use neither bounding boxes nor part annotations, and 
     <td align='center'>reproduce<br>(tensorflow)</td>
 </tr>
 <tr>
-    <td>mpncov_resnet50</td>
+    <td>fast-MPNCOV-COV-VGG-D</td>
     <td rowspan="3"> 32K</td>
+    <td align='center'>87.2</td>
+    <td align='center'><strong>86.95</strong></td>
+    <td align='center'>90.0</td>
+    <td align='center'><strong>91.72</strong></td>
+    <td align='center'>92.5</td>
+    <td align='center'><strong>92.95</strong></td>
+</tr>
+<tr>
+    <td>fast-MPNCOV-COV-ResNet50</td>
     <td align='center'>88.1</td>
     <td align='center'><strong>87.6</strong></td>
     <td align='center'>90.0</td>
@@ -35,7 +44,7 @@ All the reproduced results use neither bounding boxes nor part annotations, and 
     <td align='center'><strong>93.2</strong></td>
 </tr>
 <tr>
-    <td>mpncov_resnet101</td>
+    <td>fast-MPNCOV-COV-ResNet101</td>
     <td align='center'>88.7</td>
     <td align='center'><strong>88.1</strong></td>
     <td align='center'>91.4</td>
@@ -43,19 +52,10 @@ All the reproduced results use neither bounding boxes nor part annotations, and 
     <td align='center'>93.3</td>
     <td align='center'><strong>93.9</strong></td>
 </tr>
-<tr>
-    <td>mpncov_VGG16BN</td>
-    <td align='center'>87.2</td>
-    <td align='center'><strong>86.95</strong></td>
-    <td align='center'>90.0</td>
-    <td align='center'><strong>91.30</strong></td>
-    <td align='center'>92.5</td>
-    <td align='center'><strong>92.95</strong></td>
-</tr>
 </table>
 
 * **parameter setting**<br>
-**mpncov_VGG16BN**: weightdecay=1e-4, batchsize=10, learningrate=3e-3 for all layers except the FC layer(which is *5×learningrate*, and the learning rate is reduced to 3e-4 at epoch 20(*FC: 5×3e-4*)
+**fast-MPN-COV-VGG-D**: weightdecay=1e-4, batchsize=10, learningrate=3e-3 for all layers except the FC layer(which is *5×learningrate*, and the learning rate is reduced to 3e-4 at epoch 20(*FC: 5×3e-4*)
 
 ### Bilinear CNN
 <table>
