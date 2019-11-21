@@ -32,38 +32,39 @@ This paper concerns an iterative matrix square root normalization network (calle
     <td align='center'>BaiduDrive</td>
 </tr>
 <tr>
-    <td>mpncov_resnet50</td>
+    <td>fast-MPN-COV-VGG-D</td>
     <td rowspan="3" align='center'> 32K</td>
+    <td align='center'>26.55/8.94</td>
+    <td align='center'><strong>23.98/7.12</strong></td>
+    <td align='center'>23.98/7.12</td>
+    <td align='center'><a href="https://drive.google.com/open?id=19c8ei0FdeRMfeITBApvrjsV49lp1-2ss" title="标题">650.4M</a></td>
+    <td align='center'><a href="https://pan.baidu.com/s/13u1nih7bC1b4Mgn9APYxBA" title="标题">650.4M</a></td>
+</tr>
+<tr>
+    <td>fast-MPN-COV-ResNet50</td>
     <td align='center'>22.14/6.22</td>
     <td align='center'><strong>21.57/6.14</strong></td>
     <td align='center'>21.71/6.13</td>
-    <td align='center'><a href="https://drive.google.com/file/d/1kXi3PGixfn7QZaxtLK2DkiZ6h-zoGpfq/view?usp=sharing" title="标题">GoogleDrive</a></td>
-    <td align='center'><a href="https://pan.baidu.com/s/109VXo2XYyI2gvcHL9Xlv9g" title="标题">BaiduDrive</a></td>
+    <td align='center'><a href="https://drive.google.com/file/d/1kXi3PGixfn7QZaxtLK2DkiZ6h-zoGpfq/view?usp=sharing" title="标题">217.3M</a></td>
+    <td align='center'><a href="https://pan.baidu.com/s/109VXo2XYyI2gvcHL9Xlv9g" title="标题">217.3M</a></td>
 </tr>
 <tr>
-    <td>mpncov_resnet101</td>
+    <td>fast-MPN-COV-ResNet101</td>
     <td align='center'>21.21/5.68</td>
     <td align='center'><strong>20.50/5.45</strong></td>
     <td align='center'>20.99/5.56</td>
-    <td align='center'><a href="https://drive.google.com/file/d/1RFdw2oEZLe03SCDFanwQKHUY13OeEzp0/view" title="标题">GoogleDrive</a></td>
-    <td align='center'><a href="https://pan.baidu.com/s/1fj0-vukSbRz1ihTDtAbUdA" title="标题">BaiduDrive</a></td>
+    <td align='center'><a href="https://drive.google.com/file/d/1RFdw2oEZLe03SCDFanwQKHUY13OeEzp0/view" title="标题">289.9M</a></td>
+    <td align='center'><a href="https://pan.baidu.com/s/1fj0-vukSbRz1ihTDtAbUdA" title="标题">289.9M</a></td>
 </tr>
-<tr>
-    <td>mpncov_VGG16BN</td>
-    <td align='center'>——</td>
-    <td align='center'><strong>23.98/7.12</strong></td>
-    <td align='center'>23.98/7.12</td>
-    <td align='center'><a href="https://drive.google.com/open?id=19c8ei0FdeRMfeITBApvrjsV49lp1-2ss" title="标题">GoogleDrive</a></td>
-    <td align='center'><a href="https://pan.baidu.com/s/13u1nih7bC1b4Mgn9APYxBA" title="标题">BaiduDrive</a></td>
-</tr>
+
 </table>
 
-* We convert the trained mpncov_VGG16BN model from the PyTorch framework to TensorFlow framework
+* We convert the trained fast-MPNCOV-VGG-D model from the PyTorch framework to TensorFlow framework.
 
 #### Fine-grained classification results (top-1 accuracy rates, %)
 <table>
 <tr>                                      
-    <td rowspan="2" align='center'>Model</td>
+    <td rowspan="2" align='center'>Network</td>
     <td rowspan="2" align='center'>Dim</td>
     <td colspan="2" align='center'><a href="http://www.vision.caltech.edu/visipedia/CUB-200-2011.html" title="标题">CUB</a></td>
     <td colspan="2" align='center'><a href="http://ai.stanford.edu/~jkrause/cars/car_dataset.html" title="标题">Aircraft</a></td>
@@ -78,8 +79,17 @@ This paper concerns an iterative matrix square root normalization network (calle
     <td align='center'>reproduce<br>(tensorflow)</td>
 </tr>
 <tr>
-    <td>mpncov_resnet50</td>
+    <td>fast-MPNCOV-COV-VGG-D</td>
     <td rowspan="3"> 32K</td>
+    <td align='center'>87.2</td>
+    <td align='center'><strong>86.95</strong></td>
+    <td align='center'>90.0</td>
+    <td align='center'><strong>91.72</strong></td>
+    <td align='center'>92.5</td>
+    <td align='center'><strong>92.95</strong></td>
+</tr>
+<tr>
+    <td>fast-MPNCOV-COV-ResNet50</td>
     <td align='center'>88.1</td>
     <td align='center'><strong>87.6</strong></td>
     <td align='center'>90.0</td>
@@ -88,7 +98,7 @@ This paper concerns an iterative matrix square root normalization network (calle
     <td align='center'><strong>93.2</strong></td>
 </tr>
 <tr>
-    <td>mpncov_resnet101</td>
+    <td>fast-MPNCOV-COV-ResNet101</td>
     <td align='center'>88.7</td>
     <td align='center'><strong>88.1</strong></td>
     <td align='center'>91.4</td>
@@ -96,22 +106,13 @@ This paper concerns an iterative matrix square root normalization network (calle
     <td align='center'>93.3</td>
     <td align='center'><strong>93.9</strong></td>
 </tr>
-<tr>
-    <td>mpncov_VGG16BN</td>
-    <td align='center'>87.2</td>
-    <td align='center'><strong>86.95</strong></td>
-    <td align='center'>90.0</td>
-    <td align='center'><strong>91.72</strong></td>
-    <td align='center'>92.5</td>
-    <td align='center'><strong>92.95</strong></td>
-</tr>
 </table>
 
 * Our method uses neither bounding boxes nor part annotations<br>
 * The reproduced results are obtained by simply finetuning our pre-trained fast MPN-COV-ResNet model with a small learning rate, which do not perform SVM as our paper described.<br>
 ```
 parameter setting
-mpncov_VGG16BN: weightdecay=1e-4, batchsize=10, learningrate=3e-3 for all layers except the FC layer(which is 5×learningrate, and the learning rate is reduced to 3e-4 at epoch 20(FC: 5×3e-4)
+fast-MPNCOV-VGG-D: weightdecay=1e-4, batchsize=10, learningrate=3e-3 for all layers except the FC layer(which is 5×learningrate, and the learning rate is reduced to 3e-4 at epoch 20(FC: 5×3e-4)
 ```
 ## Implementation details
 We implement our Fast MPN-COV (i.e., iSQRT-COV) [meta-layer](https://github.com/XuChunqiao/Tensorflow-Fast-MPNCOV/blob/master/src/representation/MPNCOV.py) under ***Tensorflow2.0*** package. We release two versions of code:<br> 
