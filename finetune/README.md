@@ -30,7 +30,7 @@ All the reproduced results use neither bounding boxes nor part annotations, and 
     <td align='center'>87.2</td>
     <td align='center'><strong>86.95</strong></td>
     <td align='center'>90.0</td>
-    <td align='center'><strong>91.72</strong></td>
+    <td align='center'><strong>91.74</strong></td>
     <td align='center'>92.5</td>
     <td align='center'><strong>92.95</strong></td>
 </tr>
